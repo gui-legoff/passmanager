@@ -1,0 +1,34 @@
+
+#btn{
+  margin-left:20px;
+  padding: 17px 35px;
+  font-size: 20px;
+}
+
+
+
+
+
+
+
+/************************************************/
+
+@media screen and (max-width: 1300px){
+  #btn{
+    margin: 30px 0 0 0;
+  }
+}
+
+@media screen and (max-width: 800px){
+    #longueur{
+      margin: 10px 0 20px 0;
+    }
+
+    #h3{
+      margin-bottom: 15px;
+    }
+
+    #btn_gen{
+      margin-top: 0;
+    }
+  }

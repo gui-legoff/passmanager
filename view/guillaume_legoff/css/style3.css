@@ -1,0 +1,381 @@
+/*Custom Gutenberg Styles*/
+@media only screen and (min-width: 768px) {
+
+    .middle-col .alignfull {
+        margin-left: calc(50% - 50vw);
+        margin-right: calc(50% - 49.6vw);
+        width: auto;
+        max-width: 1000%;
+    }
+
+    .middle-col .alignwide {
+        margin-left: calc(25% - 25vw);
+        margin-right: calc(25% - 25vw);
+        width: auto;
+        max-width: 1000%;
+    }
+
+    .middle-col .alignwide img,
+    .middle-col .alignfull img {
+        display: block;
+        margin: 0 auto;
+    }
+     .middle-col .alignfull img {
+               width: 100vw;
+    }
+    .middle-col .alignwide iframe,
+    .middle-col .alignfull iframe{
+        display: block;
+        margin: 0 auto;
+        width: 100% !important;
+    }
+}
+.wp-block-image{
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+.alignleft img {
+    float: left;
+}
+.alignright img {
+    float: right;
+}
+
+.wp-block-embed__wrapper iframe{
+    width: 100% !important;
+}
+
+
+.entry-content .wp-block-gallery,
+.wp-block-gallery{
+    margin: 0;
+    padding: 0;
+}
+.panel-layout{
+    clear: both;
+    margin-bottom:1.5em;
+}
+.wp-block-columns{
+    clear: both;
+}
+
+/**/
+
+
+.top-header {
+    background-color: #4f6df5;
+}
+
+.site-footer {
+    background-color: #1b1b1b;
+}
+
+.copy-right {
+    background-color: #2d2d2d;
+}
+
+.site-title:hover,
+.site-title a:hover,
+.at-social .socials li a,
+.primary-color,
+#portfolio-web-breadcrumbs a:hover,
+.woocommerce .star-rating,
+.woocommerce ul.products li.product .star-rating,
+.woocommerce p.stars a,
+.woocommerce ul.products li.product .price,
+.woocommerce ul.products li.product .price ins .amount,
+.woocommerce a.button.add_to_cart_button:hover,
+.woocommerce a.added_to_cart:hover,
+.woocommerce a.button.product_type_grouped:hover,
+.woocommerce a.button.product_type_external:hover,
+.woocommerce .cart .button:hover,
+.woocommerce .cart input.button:hover,
+.woocommerce #respond input#submit.alt:hover,
+.woocommerce a.button.alt:hover,
+.woocommerce button.button.alt:hover,
+.woocommerce input.button.alt:hover,
+.woocommerce .woocommerce-info .button:hover,
+.woocommerce .widget_shopping_cart_content .buttons a.button:hover,
+.woocommerce div.product .woocommerce-tabs ul.tabs li a,
+.woocommerce-message::before,
+i.slick-arrow:hover,
+.acme-contact .contact-page-content ul li strong,
+.acme-contact .contact-page-content ul li strong,
+.main-navigation .acme-normal-page .current_page_item>a,
+.main-navigation .acme-normal-page .current-menu-item>a,
+.main-navigation .acme-normal-page .current_page_item li a:hover,
+.main-navigation .acme-normal-page .current-menu-item li a:hover,
+.main-navigation .acme-normal-page ul li a:hover,
+.at-sticky .main-navigation .acme-normal-page .current_page_item>a,
+.at-sticky .main-navigation .acme-normal-page .current-menu-item>a,
+.at-sticky .main-navigation .acme-normal-page .current_page_item li a:hover,
+.at-sticky .main-navigation .acme-normal-page .current-menu-item li a:hover,
+.at-sticky .main-navigation .acme-normal-page ul li a:hover,
+.main-navigation .active a,
+.main-navigation .navbar-nav>li a:hover,
+.main-navigation li li a:hover {
+    color: #4f6df5;
+}
+
+.navbar .navbar-toggle:hover,
+.main-navigation .current_page_ancestor>a:before,
+.comment-form .form-submit input,
+.btn-primary,
+.wpcf7-form input.wpcf7-submit,
+.wpcf7-form input.wpcf7-submit:hover,
+.sm-up-container,
+.btn-primary.btn-reverse:before,
+#at-shortcode-bootstrap-modal .modal-header,
+.primary-bg,
+.navigation.pagination .nav-links .page-numbers.current,
+.navigation.pagination .nav-links a.page-numbers:hover,
+.woocommerce .product .onsale,
+.woocommerce a.button.add_to_cart_button,
+.woocommerce a.added_to_cart,
+.woocommerce a.button.product_type_grouped,
+.woocommerce a.button.product_type_external,
+.woocommerce .single-product #respond input#submit.alt,
+.woocommerce .single-product a.button.alt,
+.woocommerce .single-product button.button.alt,
+.woocommerce .single-product input.button.alt,
+.woocommerce #respond input#submit.alt,
+.woocommerce a.button.alt,
+.woocommerce button.button.alt,
+.woocommerce input.button.alt,
+.woocommerce .widget_shopping_cart_content .buttons a.button,
+.woocommerce div.product .woocommerce-tabs ul.tabs li:hover,
+.woocommerce div.product .woocommerce-tabs ul.tabs li.active,
+.woocommerce .cart .button,
+.woocommerce .cart input.button,
+.woocommerce input.button:disabled,
+.woocommerce input.button:disabled[disabled],
+.woocommerce input.button:disabled:hover,
+.woocommerce input.button:disabled[disabled]:hover,
+.woocommerce nav.woocommerce-pagination ul li a:focus,
+.woocommerce nav.woocommerce-pagination ul li a:hover,
+.woocommerce nav.woocommerce-pagination ul li span.current,
+.woocommerce a.button.wc-forward,
+.woocommerce .widget_price_filter .ui-slider .ui-slider-range,
+.woocommerce .widget_price_filter .ui-slider .ui-slider-handle,
+.navbar .cart-wrap .acme-cart-views a span,
+.acme-gallery .read-more,
+.woocommerce a.button.alt.disabled,
+.woocommerce a.button.alt.disabled:hover,
+.woocommerce a.button.alt:disabled,
+.woocommerce a.button.alt:disabled:hover,
+.woocommerce a.button.alt:disabled[disabled],
+.woocommerce a.button.alt:disabled[disabled]:hover,
+.woocommerce button.button.alt.disabled,
+.woocommerce-MyAccount-navigation ul>li>a:hover,
+.woocommerce-MyAccount-navigation ul>li.is-active>a,
+.featured-button.btn,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:active:hover,
+.btn-primary:active:focus,
+.btn-primary:focus {
+    background-color: #4f6df5;
+    color: #fff;
+    border: 1px solid #4f6df5;
+}
+
+.woocommerce .cart .button,
+.woocommerce .cart input.button,
+.woocommerce a.button.add_to_cart_button,
+.woocommerce a.added_to_cart,
+.woocommerce a.button.product_type_grouped,
+.woocommerce a.button.product_type_external,
+.woocommerce .cart .button,
+.woocommerce .cart input.button .woocommerce .single-product #respond input#submit.alt,
+.woocommerce .single-product a.button.alt,
+.woocommerce .single-product button.button.alt,
+.woocommerce .single-product input.button.alt,
+.woocommerce #respond input#submit.alt,
+.woocommerce a.button.alt,
+.woocommerce button.button.alt,
+.woocommerce input.button.alt,
+.woocommerce .widget_shopping_cart_content .buttons a.button,
+.woocommerce div.product .woocommerce-tabs ul.tabs:before {
+    border: 1px solid #4f6df5;
+}
+
+.blog article.sticky {
+    border-bottom: 2px solid #4f6df5;
+}
+
+a,
+.posted-on a,
+.single-item .fa,
+.author.vcard a,
+.comments-link a,
+.edit-link a,
+.tags-links a,
+.byline a,
+.nav-links a,
+.widget li a,
+.entry-meta i.fa,
+.entry-footer i.fa,
+.counter-item i,
+.testimonial-content::after {
+    color: #748BF7;
+}
+
+a:hover,
+a:active,
+a:focus,
+.posted-on a:hover,
+.single-item .fa:hover,
+.author.vcard a:hover,
+.comments-link a:hover,
+.edit-link a:hover,
+.tags-links a:hover,
+.byline a:hover,
+.nav-links a:hover,
+.widget li a:hover {
+    color: #3f5dcf;
+}
+
+.btn-reverse,
+.image-slider-wrapper .slider-content .btn-reverse:hover,
+.at-widgets.at-parallax .btn-reverse:hover,
+.at-price h2 {
+    color: #4f6df5;
+}
+
+.btn-reverse:hover,
+.image-slider-wrapper .slider-content .btn-reverse:hover,
+.at-widgets.at-parallax .btn-reverse:hover {
+    background: #4f6df5;
+    color: #fff;
+    border-color: #4f6df5;
+}
+
+.woocommerce #respond input#submit,
+.woocommerce a.button,
+.woocommerce button.button,
+.woocommerce input.button {
+    background: #4f6df5;
+    color: #fff;
+}
+
+.team-img-box:before {
+    -webkit-box-shadow: 0 -106px 92px -35px #4f6df5 inset;
+    box-shadow: 0 -106px 92px -35px #4f6df5 inset;
+}
+
+.at-pricing-box:hover .at-pricing-img-box::before {
+    -webkit-box-shadow: 0 -130px 92px -35px #4f6df5 inset;
+    box-shadow: 0 -130px 92px -35px #4f6df5 inset;
+}
+
+.filters.button-group button:hover {
+    background: #4f6df5;
+    color: #fff;
+}
+
+.acme-services.normal .column .single-item:hover,
+.acme-services.normal .column .single-item:hover:after,
+.acme-services.normal .column .single-item:hover:before {
+    border-color: #4f6df5;
+}
+
+.contact-form div.wpforms-container-full .wpforms-form input[type='submit'],
+.contact-form div.wpforms-container-full .wpforms-form button[type='submit'],
+.contact-form div.wpforms-container-full .wpforms-form .wpforms-page-button {
+    background-color: #4f6df5;
+    color: #fff;
+    border: 1px solid #4f6df5;
+}
+
+.acme-accordions .accordion-title:hover,
+.acme-accordions .accordion-title.active,
+.acme-accordions .accordion-title.active a {
+    border-color: #4f6df5;
+    background: #4f6df5;
+
+}
+
+.scroll-box span:after,
+.sm-up-container,
+.at-pricing-img-box .at-price,
+.at-timeline-block.current .at-timeline-img,
+.menu-default .navbar-toggle:hover span.menu-icon span,
+.at-action-wrapper .slick-arrow {
+    background: #748BF7;
+
+}
+
+.sm-up-container:hover,
+.at-action-wrapper .slick-arrow:hover {
+    background: #3f5dcf;
+
+}
+
+/* Footer */
+
+.panel-grid.panel-has-style>.panel-row-style,
+.panel-grid.panel-no-style {
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: nowrap;
+    -ms-justify-content: space-between;
+    justify-content: space-between
+}
+
+.panel-layout.panel-is-rtl .panel-grid.panel-has-style>.panel-row-style,
+.panel-layout.panel-is-rtl .panel-grid.panel-no-style {
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse
+}
+
+.panel-grid-cell {
+    -ms-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+.panel-grid-cell .panel-cell-style {
+    height: 100%
+}
+
+.panel-grid-cell .so-panel {
+    zoom: 1
+}
+
+.panel-grid-cell .so-panel:before {
+    content: "";
+    display: block
+}
+
+.panel-grid-cell .so-panel:after {
+    content: "";
+    display: table;
+    clear: both
+}
+
+.panel-grid-cell .panel-last-child {
+    margin-bottom: 0
+}
+
+.panel-grid-cell .widget-title {
+    margin-top: 0
+}
+
+body.siteorigin-panels-before-js {
+    overflow-x: hidden
+}
+
+body.siteorigin-panels-before-js .siteorigin-panels-stretch {
+    margin-right: -1000px !important;
+    margin-left: -1000px !important;
+    padding-right: 1000px !important;
+    padding-left: 1000px !important
+}
+
+/**/
+
+.contact-info .white{
+    color: #2d2d2d!important;
+}
+.contact-info .white:hover{
+    color:white!important;
+}

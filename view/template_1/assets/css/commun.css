@@ -1,0 +1,160 @@
+li {list-style: none;}
+  
+ul {padding-left: 0}
+
+#wrapper .main, #wrapper .main-content {
+  padding-top: 54.4px;
+}
+
+#sidebar-nav ul{padding-top: 20px}
+  
+.vignette{
+  float: left;
+  width: 18%;
+  margin: 1%;
+}
+
+.vignette .panel{
+  min-height: 420px;
+}
+.vgn_img{
+  width: 100%;
+  margin-top: 10px;
+}
+
+.float-r{
+  float: right;
+}
+
+.float-l{
+  float: left;
+}
+
+.iVignette{
+  font-size: 17px;
+  cursor: pointer;
+  margin-right: 0;
+  margin-left: 7px
+}
+
+.contain{
+  margin: 15px auto;
+  padding: 20px 26px;
+  background-color: #fff;
+  border-radius: 3px;
+  width: 98%;
+}
+
+#statistiques{
+  margin-top: 15px;
+  width: 98%
+}
+
+.fa-plus-square{
+  color: #0CA6F4;
+}
+
+.fa-plus-square:hover{
+  color: rgb(1, 133, 199);
+  transition: 0.2s;
+}
+
+.password{
+  cursor: pointer!important;
+  background: none!important;
+  border: 0!important;
+  box-shadow: none!important;
+}
+
+.avatar{
+  width:30px;
+
+  height:30px;
+  object-fit: cover;
+}
+
+.update-pro{
+  margin:22px;
+}
+
+@media screen and (max-width: 1600px){
+  .vignette{
+    width: 23%;
+  }
+}
+
+@media screen and (max-width: 1200px){
+  .vignette{
+    width: 98%;
+  }
+
+  #connexion_last{
+    display: none;
+  }
+
+  .navbar-form .input-group, .navbar-form , .panel-heading div, .input-group-btn:last-child > .btn{
+    width: 100%!important;
+  }
+
+  .update-pro, .btn{
+    width: 100%;
+    margin: 40px 0 30px 0;
+    padding: 3.5% 0;
+    font-size: 20px;
+    float: none!important;
+  }
+
+  #wrapper .main-content {
+    padding-top: 35px;
+  }
+
+  .iVignette, .panel-title{
+    font-size: 25px!important;
+  }
+
+  .iVignette{
+    margin-left: 15px
+  }
+
+
+}
+
+@media screen and (max-width: 767px){
+
+  .avatar{
+    margin: 14px 0 ;
+    float: right;
+  }
+  
+  .navbar-nav > li{
+    top:0
+  }
+
+  #avatar_span{
+    float: right;
+    margin: 15px 21px 12px 21px;
+  }
+
+  #avatar_i{
+    float: right;
+    margin: 21px -10px;
+  }
+
+  .dropdown-toggle{
+    background-color: transparent!important;
+  }
+
+  #navbar{
+    height: 80px;
+  }
+
+  .panel-heading a{
+    margin-top: 15px;
+  }
+
+  .popup{
+    width: 95%;
+    margin-top: 20px;
+  }
+
+}

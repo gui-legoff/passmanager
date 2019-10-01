@@ -1,0 +1,12 @@
+#banniere{
+    width:25%;
+    margin: 20px;
+    float:right;
+    transition-duration: 0.4s;
+    overflow: hidden;
+}
+
+#banniere:hover{
+    transform: scale(1.1);
+    margin: 20px 30px;
+}
