@@ -1,3 +1,5 @@
 # Ignore private folder
 docs/
 media/psd
+config
+.htaccess

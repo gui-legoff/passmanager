@@ -1,4 +1,4 @@
-# Passmanager
+# Pass manager
 
 We've got too many password to remember, and they are frequently the same ...
 Passmanager is a project for myself, for manage in security all the password i have got.
@@ -8,44 +8,42 @@ Passmanager is a project for myself, for manage in security all the password i h
 
 ## Features
 
+### 1.1 : 
+- Convert into Symfony PHP Framework
 
 
 ------
 
 ## Tech use
 
+BACKEND :
 - PHP 7.2 -> Object-oriented programming
+- MVC design pattern
 - Mysql
+
+FRONT :
+- Javascript : Jquery , library : notify
+- CSS: Font awesome, Bootstrap
 - Git
 
 - Sécurity use ?
-- Bootstrap ?
-- Jquery ?
-- Font awesome ?
 
 ------
 
 ## Release History
 
+*  1.1
+    * Alpha version some upgrades will comes soon ...
 *  1.0
-    *  First version upload on internet
-
-*  0.1
-    *  Beta version Some upgrades will comes soon ...
-
-*  0.0
-    *  Alpha version 
+    *  Beta version upload on internet
 
 ------
 
 ## To - do
 | Status        | Nom           | Version  |
 | --- | --- | --- |
-| ❌ | Home page listing de tous les comptes avec une image et des boutons d'options :  - configurer - afficher - supprimer -> faire une pop up pour confirmer la suppr  | 0.0|
-| ❌ | Faire comme une fiche produits : avec le lien du site en question afficher le mot de passe et l'identifiants un champs informations pouvoir modifier tous les champs affichés un point d'information pour générer un mot de passe compliqué  | 0.0|
-| ❌ | Faire une page de stats avec le nombre de mots de passe similaire , mot de passe identique, mot de passe au total Pouvoir exporter l'ensemble de ces mots de passe et identifiants au  format PDF  | 0.0|
-| ❌ | Formulaire de login classique basique login a droite image a gauche : écran syndé en 2  | 0.0|
-| ❌ | Recuperer le systheme de fenetre d'avertissement pop-up | 0.0|
-| ✅ | Edit the .gitignore | 0.0 |
-| ✅ | Edit the README.md | 0.0 |
-| ✅ | ADD the MVC design pattern  | 0.0|
+| ❌ | Convert the project into a Symfony project | 1.1 |
+| ❌ | Create download page for export password into a PDF file | 1.1 |
+| ❌ | Upload the file : docs\fonctionabilitées.txt | 1.1 |
+| ❌  | Add Security to password and connexion | 1.0 |
+| ✅ | Upload Beta version online | 1.0 |
