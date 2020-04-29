@@ -24,10 +24,14 @@ if(!empty($_FILES['image'])){
     }  
 }
 
+// Mettre a jour le mot de passe
 if(!empty($_POST['login']) || !empty($_POST['password'])){
     
     if(!empty($_POST['login'])){$login = htmlentities(addslashes($_POST['login']));}
-    if(!empty($_POST['password'])){$password = htmlentities(addslashes($_POST['password']));}
+    // Mot de passe hasher en sha256
+    if(!empty($_POST['password'])){
+        $password = hash('sha256',htmlentities(addslashes($_POST['password'])));
+    }
     
     if(!empty($login) && !empty($password)){
         $data = "`login` = '$login',`password` = '$password'";        

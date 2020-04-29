@@ -8,7 +8,8 @@ if(isset($_POST['connexion'])){
         $message = '<script>$.notify("Champs vides ou incomplet", {type:"danger",icon:"exclamation-triangle"});</script>';
     }elseif(!empty($_POST['login']) and !empty($_POST['pass'])){
         $login = htmlentities(addslashes($_POST['login']));
-        $pass = htmlentities(addslashes($_POST['pass']));
+        // Mot de passe hasher en sha256
+        $pass = hash('sha256',htmlentities(addslashes($_POST['pass'])));
 
         $oConnect = new Connexion($db);
         if( $oConnect -> connect($login,$pass) === false ){
@@ -39,7 +40,8 @@ if( isset($_GET['url']) and $_GET['url'] == 'inscription' ){
             $message = '<script>$.notify("Les mots de passe ne sont pas identiques", {type:"danger",icon:"exclamation-triangle"});</script>';
         }elseif(!empty($_POST['login']) and !empty($_POST['pass']) and !empty($_POST['pass2']) and !empty($_POST['pseudo'])){
             $login = htmlentities(addslashes($_POST['login']));
-            $pass = htmlentities(addslashes($_POST['pass']));
+            // Mot de passe hasher en sha256
+            $pass = hash('sha256',htmlentities(addslashes($_POST['pass'])));
             $pseudo = htmlentities(addslashes($_POST['pseudo']));
 
             $oInscription = new Connexion($db);

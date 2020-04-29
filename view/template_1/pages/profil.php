@@ -38,7 +38,7 @@
                                 <p class="panel-subtitle">Identifiant</p>
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="fa fa-user"></i></span>
-                                    <input class="form-control" placeholder="<?= $aUserData['login'] ?>" type="text" name="login">
+                                    <input class="form-control cursor_not-allowed" placeholder="<?= $aUserData['login'] ?>" type="text" name="login">
                                 </div>
                                 <br>
                                 <p class="panel-subtitle">Nouveau mot de passe maitre</p>

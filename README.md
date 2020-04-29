@@ -8,8 +8,8 @@ Passmanager is a project for myself, for manage in security all the password i h
 
 ## Features
 
-### 1.1 : 
-- Convert into Symfony PHP Framework
+### 1.0.1 : 
+- Beta version finish
 
 
 ------
@@ -26,24 +26,23 @@ FRONT :
 - CSS: Font awesome, Bootstrap
 - Git
 
-- Sécurity use ?
+- Sécurity use : sha256 for users paswword login
 
 ------
 
 ## Release History
 
-*  1.1
+*  1.1.1
     * Alpha version some upgrades will comes soon ...
-*  1.0
-    *  Beta version upload on internet
+*  1.0.1
+    *  Beta version finish
 
 ------
 
 ## To - do
 | Status        | Nom           | Version  |
 | --- | --- | --- |
-| ❌ | Convert the project into a Symfony project | 1.1 |
 | ❌ | Create download page for export password into a PDF file | 1.1 |
 | ❌ | Upload the file : docs\fonctionabilitées.txt | 1.1 |
-| ❌  | Add Security to password and connexion | 1.0 |
+| ✅ | Add Security to password and connexion | 1.0 |
 | ✅ | Upload Beta version online | 1.0 |
