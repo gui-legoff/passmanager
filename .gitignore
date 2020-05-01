@@ -1,7 +1,7 @@
 # Ignore private folder
 docs/
 media/psd
-config/
+config/*
 view/guillaume_legoff/
 
 

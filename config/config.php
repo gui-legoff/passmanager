@@ -25,8 +25,7 @@
 //_____________________ DATA BASE - MySQL ___________________//
 
     // Set Data base access
-    $DBhost = ""; // name of the host
-    $DBlogin = ""; // login 
-    $DBmdp = ""; // password
-    
-    $DBdbname = ""; // name of database
+    $DBlogin = "root";
+    $DBmdp = "root";
+    $DBhost = "127.0.0.1";
+    $DBdbname = "passmanager";
