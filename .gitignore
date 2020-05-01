@@ -7,3 +7,4 @@ view/guillaume_legoff/
 
 # Ignore private files
 .htaccess
+php_errors.log
