@@ -48,7 +48,7 @@
             <div class="brand">
                 <a href="./"><img src="media/img/logo.png" alt="Pass manager Logo" class="img-responsive logo"></a>
             </div>
-            <div class="container-fluid">
+            <div class="container-fluid p-t-10 p-b-10">
                 <div class="navbar-btn">
                     <button type="button" class="btn-toggle-fullwidth"><i
                             class="lnr lnr-arrow-left-circle"></i></button>
@@ -88,7 +88,6 @@
                         <li><a href="corbeille"><i class="lnr lnr-trash"></i> <span>Corbeille</span></a></li>
                         <li><a href="generateur"><i class="lnr lnr-lock"></i> <span>Générateur</span></a></li>
                         <li><a href="statistiques"><i class="lnr lnr-chart-bars"></i> <span>Statistiques</span></a></li>
-                        <!-- <li><a href="telecharger"><i class="lnr lnr-download"></i> <span>Télécharger</span></a> -->
                     </ul>
                 </nav>
             </div>

@@ -1,5 +1,5 @@
     <!-- OVERVIEW -->
-    <div class="panel panel-headline" style="margin:0 1%">
+    <div class="panel panel-headline">
         <div class="panel-heading">
             <div style="float:left">
                 <h1 class="m-t-0">Statistiques de votre compte</h1>

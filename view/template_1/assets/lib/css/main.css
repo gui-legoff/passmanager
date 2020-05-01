@@ -257,7 +257,8 @@ html.fullscreen-bg #wrapper {
 }
 
 .navbar-form input[type="text"] {
-  min-width: 400px;
+  /* min-width: 500px; */
+  width: 60%;
 }
 
 @media screen and (max-width: 767px) {
@@ -537,10 +538,6 @@ ul.notifications>li>.more:focus {
 .sidebar .nav>li>a .badge {
   font-weight: 400;
   background-color: #F9354C;
-}
-
-.sidebar .nav {
-  /* submenu */
 }
 
 .sidebar .nav i {
@@ -843,7 +840,9 @@ fieldset[disabled] .btn {
   -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
   background-color: #fff;
-  margin-bottom: 30px;
+  margin: 0 1%;
+  margin-top: 20px;
+
 }
 
 .panel .panel-heading,

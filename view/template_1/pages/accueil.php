@@ -1,135 +1,133 @@
     <?php if(!empty($aUserAccounts)){ ?>
     <!-- SEARCH BAR -->
-    <div class="panel panel-headline" id="search_content">
-        <div class="panel-heading p-b-0">
-            <div style="float:left">
-
-                <form class="navbar-form navbar-left p-0" method="post">
-                    <div class="input-group">
-                        <input type="text" class="form-control" id="search" placeholder="Nom du site..." name="keyword"
-                            value="<?php if(isset($search)){echo $search;}?>">
-                        <span class="input-group-btn">
-                            <input class="btn btn-primary" type="submit" value="Rechercher" id="btn_search">
-                        </span>
-                    </div>
-                </form>
-            </div>
-            <a class="btn btn-primary float-r" href="#popupAdd" title="ajouter" style="margin: 8px 0"><i
-                    class="fas fa-plus"></i><span>Ajouter un site</span>
-            </a>
-            <div style="clear:both"></div>
-
-            <ul>
-                <?php
-                if(!empty($accountSearchBar)){
-                    foreach ($accountSearchBar as $key => $v) {
-                ?>
-                <li class="vignette">
-                    <div class="panel">
-                        <div class="panel-heading">
-                            <h3 class="panel-title float-l"><?= $v['name'] ?></h3>
-                            <div>
-                                <a href="?delete=<?= $v['id']; ?>#delete_<?= $v['id']; ?>" style="color:black">
-                                    <i class="lnr lnr-cross float-r iVignette"
-                                        style="font-size:17px;cursor:pointer"></i>
-                                </a>
-                                <a href="?update=<?= $v['id']; ?>#update_<?= $v['id']; ?>" style="color:black">
-                                    <i class="lnr lnr-pencil float-r iVignette"
-                                        style="font-size:17px;cursor:pointer"></i>
-                                </a>
-                            </div>
-                            <img src="media/img/vignette/<?= $v['image'] ?>" alt="<?= $v['name'] ?>" class="vgn_img">
-                        </div>
-                        <div class="panel-body" style="display: block;">
-                            <p><i class="fas fa-user"></i><?= $v['login'] ?></p>
-                            <p>
-                                <span><i class="fas fa-lock float-l"></i></span>
-                                <input type="password" class="form-control password float-l" id="pwd_<?= $v['id'] ?>"
-                                    onclick="copyToClipboard('#pwd_<?= $v['id'] ?>')" value="<?= $v['pass']; ?>"
-                                    style="width:70%;padding:0;height:auto">
-                                <button type="button" class="btn btn-secondary float-r toggle-password"
-                                    toggle="#password-field">
-                                    <i class="fa fa-eye-slash" style="margin:0"></i>
-                                </button>
-                                <div style="clear:both"></div>
-                            </p>
-                              <!-- notes -->
-                            <?php if(!empty($v['notes'])){ ?>
-                                <p><i class='far fa-sticky-note'></i>
-                                <?= CutString($v['notes'],20); ?>
-                                </p>
-                            <?php }; ?>
-                            <!-- lien -->
-                            <?php if(!empty($v['link'])){ ?>
-                                <p><i class='fas fa-link'></i><a href='<?= $v['link'] ?>' target='_blank'>
-                                <?= CutString($v['link'],20); ?>
-                                </a></p>
-                            <?php }; ?>
-                        </div>
-                    </div>
-                </li>
-                <?php
-                    }
-                }
-                ?>
-            </ul>
-            <div style="clear:both"></div>
+    <div id="search_content" class="p-t-10">
+        <div style="float:left;width: 80%;">
+            <form class="navbar-form navbar-left p-0 width100" method="post">
+                <div class="input-group width100">
+                    <input type="text" class="form-control" id="search" placeholder="Nom du site..." name="keyword"
+                        value="<?php if(isset($search)){echo $search;}?>">
+                    <span class="input-group-btn">
+                        <button type="submit" class="btn border0 bg-orange color-white" id="btn_search">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </span>
+                </div>
+            </form>
         </div>
+        <a class="btn float-r m-r-30 p-t-10 p-b-10 border0 bg-orange" href="#popupAdd" title="ajouter" style="border-radius:30px;margin-top: 24px">
+            <i class="fas fa-plus color-white"></i><span class="color-white">Ajouter un site</span>
+        </a>
+        <div style="clear:both"></div>
+
+        <ul>
+            <?php
+            if(!empty($accountSearchBar)){
+                foreach ($accountSearchBar as $key => $v) {
+            ?>
+            <li class="vignette">
+                <div class="panel">
+                    <div class="panel-heading">
+                        <h3 class="panel-title float-l"><?= $v['name'] ?></h3>
+                        <div>
+                            <a href="?delete=<?= $v['id']; ?>#delete_<?= $v['id']; ?>" style="color:black">
+                                <i class="lnr lnr-trash float-r iVignette"
+                                    style="font-size:17px;cursor:pointer"></i>
+                            </a>
+                            <a href="?update=<?= $v['id']; ?>#update_<?= $v['id']; ?>" style="color:black">
+                                <i class="lnr lnr-pencil float-r iVignette"
+                                    style="font-size:17px;cursor:pointer"></i>
+                            </a>
+                        </div>
+                        <img src="media/img/vignette/<?= $v['image'] ?>" alt="<?= $v['name'] ?>" class="vgn_img">
+                    </div>
+                    <div class="panel-body" style="display: block;">
+                        <p><i class="fas fa-user"></i><?= $v['login'] ?></p>
+                        <p>
+                            <span><i class="fas fa-lock float-l"></i></span>
+                            <input type="password" class="form-control password float-l" id="pwd_<?= $v['id'] ?>"
+                                onclick="copyToClipboard('#pwd_<?= $v['id'] ?>')" value="<?= $v['pass']; ?>"
+                                style="width:70%;padding:0;height:auto">
+                            <button type="button" class="btn btn-secondary float-r toggle-password"
+                                toggle="#password-field">
+                                <i class="fa fa-eye-slash" style="margin:0"></i>
+                            </button>
+                            <div style="clear:both"></div>
+                        </p>
+                            <!-- notes -->
+                        <?php if(!empty($v['notes'])){ ?>
+                            <p><i class='far fa-sticky-note'></i>
+                            <?= CutString($v['notes'],20); ?>
+                            </p>
+                        <?php }; ?>
+                        <!-- lien -->
+                        <?php if(!empty($v['link'])){ ?>
+                            <p><i class='fas fa-link'></i><a href='<?= $v['link'] ?>' target='_blank'>
+                            <?= CutString($v['link'],20); ?>
+                            </a></p>
+                        <?php }; ?>
+                    </div>
+                </div>
+            </li>
+            <?php
+                }
+            }
+            ?>
+        </ul>
+        <div style="clear:both"></div>
     </div>
     <!-- END SEARCH BAR -->
     <?php } ?>
 
     <!-- LIST ACCOUNTS -->
     <?php if(!empty($aUserAccounts)){ ?>
-    <ul>
-        <?php
-        foreach ($aUserAccounts as $key => $v) {
-    ?>
-        <li class="vignette">
-            <div class="panel p-b-0 m-b-0">
-                <div class="panel-heading">
-                    <h3 class="panel-title float-l"><?= $v['name'] ?></h3>
-                    <div>
-                        <a href="?delete=<?= $v['id']; ?>#delete_<?= $v['id']; ?>" style="color:black">
-                            <i class="lnr lnr-cross float-r iVignette"></i>
-                        </a>
-                        <a href="?update=<?= $v['id']; ?>#update_<?= $v['id']; ?>" style="color:black">
-                            <i class="lnr lnr-pencil float-r iVignette"></i>
-                        </a>
-                    </div>
-                    <img src="media/img/vignette/<?= $v['image'] ?>" alt="<?= $v['name'] ?>" class="vgn_img">
-                </div>
-                <div class="panel-body" style="display: block;">
-                    <p><i class="fas fa-user"></i><?= $v['login'] ?></p>
-                    <p>
-                        <i class="fas fa-lock float-l"></i>
-                        <input type="password" class="form-control password float-l" id="pwd_<?= $v['id'] ?>"
-                            onclick="copyToClipboard('#pwd_<?= $v['id'] ?>')" value="<?= $v['pass']; ?>"
-                            style="width:55%;padding:0;height:auto;margin-right:10px">
-                        <button type="button" class="btn btn-secondary float-r toggle-password"
-                            toggle="#password-field">
-                            <i class="fa fa-eye-slash" style="margin:0"></i>
-                        </button>
-                        <div style="clear:both"></div>
-                    </p>
-                    <!-- notes -->
-                    <?php if(!empty($v['notes'])){ ?>
-                        <p><i class='far fa-sticky-note'></i>
-                        <?= CutString($v['notes'],20); ?>
-                        </p>
-                    <?php }; ?>
-                    <!-- lien -->
-                    <?php if(!empty($v['link'])){ ?>
-                        <p><i class='fas fa-link'></i><a href='<?= $v['link'] ?>' target='_blank'>
-                        <?= CutString($v['link'],20); ?>
-                        </a></p>
-                    <?php }; ?>
-                </div>
-            </div>
-        </li>
-        <?php } ?>
-    </ul>
-    
+        <ul>
+            <?php
+                foreach ($aUserAccounts as $key => $v) { ?>
+                    <li class="vignette">
+                        <div class="panel p-b-0 m-b-0">
+                            <div class="panel-heading">
+                                <h3 class="panel-title float-l"><?= $v['name'] ?></h3>
+                                <div>
+                                    <a href="?delete=<?= $v['id']; ?>#delete_<?= $v['id']; ?>" style="color:black">
+                                        <i class="lnr lnr-trash float-r iVignette"></i>
+                                    </a>
+                                    <a href="?update=<?= $v['id']; ?>#update_<?= $v['id']; ?>" style="color:black">
+                                        <i class="lnr lnr-pencil float-r iVignette"></i>
+                                    </a>
+                                </div>
+                                <img src="media/img/vignette/<?= $v['image'] ?>" alt="<?= $v['name'] ?>" class="vgn_img">
+                            </div>
+                            <div class="panel-body" style="display: block;">
+                                <p><i class="fas fa-user"></i><?= $v['login'] ?></p>
+                                <p>
+                                    <i class="fas fa-lock float-l"></i>
+                                    <input type="password" class="form-control password float-l" id="pwd_<?= $v['id'] ?>"
+                                        onclick="copyToClipboard('#pwd_<?= $v['id'] ?>')" value="<?= $v['pass']; ?>"
+                                        style="width:55%;padding:0;height:auto;margin-right:10px">
+                                    <button type="button" class="btn btn-secondary float-r toggle-password"
+                                        toggle="#password-field">
+                                        <i class="fa fa-eye-slash" style="margin:0"></i>
+                                    </button>
+                                    <div style="clear:both"></div>
+                                </p>
+                                <!-- notes -->
+                                <?php if(!empty($v['notes'])){ ?>
+                                    <p><i class='far fa-sticky-note'></i>
+                                    <?= CutString($v['notes'],20); ?>
+                                    </p>
+                                <?php }; ?>
+                                <!-- lien -->
+                                <?php if(!empty($v['link'])){ ?>
+                                    <p><i class='fas fa-link'></i><a href='<?= $v['link'] ?>' target='_blank'>
+                                    <?= CutString($v['link'],20); ?>
+                                    </a></p>
+                                <?php }; ?>
+                            </div>
+                        </div>
+                    </li>
+                <?php } 
+            ?>
+        </ul>
     <?php
     // END LIST ACCOUNTS 
     }else{ 
