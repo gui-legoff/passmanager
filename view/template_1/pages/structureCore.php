@@ -56,7 +56,7 @@
                 <div style="float:left" class="brand">
                     <h3 style="line-height:30px" class="float-l m-t-0 m-b-0">Bonjour <?= $aUserData['pseudo'] ?><i
                             class="far fa-hand-peace" style="margin-left:8px"></i></h3>
-                    <p class="panel-subtitle float-l m-b-0" id="connexion_last" style="line-height: 30px;padding-left:20px">Dernière connexion :
+                    <p class="panel-subtitle float-l m-b-0" id="connexion_last">Dernière connexion :
                         <?= $aUserData['last_connexion'] ?></p>
                 </div>
                 <div>

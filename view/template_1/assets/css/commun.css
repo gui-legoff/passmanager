@@ -69,6 +69,14 @@ ul {padding-left: 0}
   object-fit: cover;
 }
 
+/* header */
+#connexion_last{
+  line-height: 30px;
+  padding-left:20px;
+  font-style: italic;
+  opacity: 0.4;
+}
+
 @media screen and (max-width: 1600px){
   .vignette{
     width: 23%;
@@ -107,8 +115,6 @@ ul {padding-left: 0}
   .iVignette{
     margin-left: 15px
   }
-
-
 }
 
 @media screen and (max-width: 767px){
