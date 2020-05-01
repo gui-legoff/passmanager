@@ -2,7 +2,7 @@
     <div class="panel panel-headline" style="margin:0 1%">
         <div class="panel-heading">
             <div style="float:left">
-                <h1>Corbeille</h1>
+                <h1 class="m-t-0">Corbeille</h1>
                 <p class="panel-subtitle">Liste de vos comptes supprimés</p>
             </div>
             <?php if(!empty($aUserAccounts)){ ?>

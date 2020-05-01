@@ -2,7 +2,7 @@
     <div class="panel panel-headline" style="margin:0 1%">
         <div class="panel-heading">
             <div style="float:left">
-                <h1>Mon profil</h1>
+                <h1 class="m-t-0">Mon profil</h1>
             </div>
             <div style="clear:both"></div>
             <p class="panel-subtitle">Vous pouvez ici modifier et avoir accès a informations personnelles</p>

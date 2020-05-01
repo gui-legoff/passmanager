@@ -54,9 +54,9 @@
                             class="lnr lnr-arrow-left-circle"></i></button>
                 </div>
                 <div style="float:left" class="brand">
-                    <h3 style="margin-top:0" class="float-l">Bonjour <?= $aUserData['pseudo'] ?><i
-                            class="far fa-smile-beam" style="margin-left:8px"></i></h3>
-                    <p class="panel-subtitle float-l" id="connexion_last" style="line-height: 1.9;padding-left:20px">Dernière connexion :
+                    <h3 style="line-height:30px" class="float-l m-t-0 m-b-0">Bonjour <?= $aUserData['pseudo'] ?><i
+                            class="far fa-hand-peace" style="margin-left:8px"></i></h3>
+                    <p class="panel-subtitle float-l m-b-0" id="connexion_last" style="line-height: 30px;padding-left:20px">Dernière connexion :
                         <?= $aUserData['last_connexion'] ?></p>
                 </div>
                 <div>
@@ -97,16 +97,14 @@
 
         <!-- MAIN CONTENT -->
         <div class="main" id="content_body">
-            <div class="main-content">
-                <div class="container-fluid">
-                    <?php
-                        if( empty($_GET['url']) ){
-                            require_once 'view/template_1/pages/accueil.php';
-                        }else{
-                            require_once 'view/template_1/pages/'.$_GET['url'].'.php';                     
-                        }                      
-                        ?>
-                </div>
+            <div class="main-content" style="padding-top: 12px;">
+                <?php
+                    if( empty($_GET['url']) ){
+                        require_once 'view/template_1/pages/accueil.php';
+                    }else{
+                        require_once 'view/template_1/pages/'.$_GET['url'].'.php';                     
+                    }                      
+                ?>
             </div>
         </div>
         <!-- END MAIN CONTENT -->

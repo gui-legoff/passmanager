@@ -63,3 +63,15 @@ function CheckSQLReq($req){
         return true;
     } 
 }
+
+// Coupé une chaine de caractère
+function CutString($string,$limit){
+    // Si la chaine de caractère est supérieu ou égal a la taille max précisé ->
+    if (strlen($string) >= $limit) {
+        $res = mb_strcut($string, 0, $limit, "UTF-8").'...';
+    }
+    // Sinon la chaine n'est pas coupé
+    else{$res = $string;}
+
+    return $res;
+}
