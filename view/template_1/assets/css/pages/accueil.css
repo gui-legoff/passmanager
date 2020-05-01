@@ -16,6 +16,10 @@
   margin:0 1%;
 }
 
+#popupAdd{
+  border-radius:30px;
+  margin-top: 24px;
+}
 
 /************************************************/
 
@@ -31,6 +35,8 @@
   #btn_search{
     font-size: 14px;
     height: 42px;
+    width: auto;
+    padding-left: 20px;
   }
 
   .vignette button{
@@ -42,9 +48,9 @@
     margin-bottom: 35px;
   }
 
-  #btn_search{
+  /* #btn_search{
     padding: 6px 22px;
-  }
+  } */
 
 }
 
@@ -55,6 +61,10 @@
 
     .panel-body p{
         margin-bottom: 20px;
+    }
+
+    #popupAdd{
+      margin-left: 23%;
     }
 
 

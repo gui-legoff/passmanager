@@ -1,7 +1,7 @@
     <?php if(!empty($aUserAccounts)){ ?>
     <!-- SEARCH BAR -->
     <div id="search_content" class="p-t-10">
-        <div style="float:left;width: 80%;">
+        <div class="float-l" id="search_div">
             <form class="navbar-form navbar-left p-0 width100" method="post">
                 <div class="input-group width100">
                     <input type="text" class="form-control" id="search" placeholder="Nom du site..." name="keyword"
@@ -14,7 +14,7 @@
                 </div>
             </form>
         </div>
-        <a class="btn float-r m-r-30 p-t-10 p-b-10 border0 bg-orange" href="#popupAdd" title="ajouter" style="border-radius:30px;margin-top: 24px">
+        <a class="btn float-r m-r-30 p-t-10 p-b-10 border0 bg-orange" href="#popupAdd" title="ajouter" id="popupAdd">
             <i class="fas fa-plus color-white"></i><span class="color-white">Ajouter un site</span>
         </a>
         <div style="clear:both"></div>
@@ -127,6 +127,7 @@
                     </li>
                 <?php } 
             ?>
+            <div style="clear:both"></div>
         </ul>
     <?php
     // END LIST ACCOUNTS 

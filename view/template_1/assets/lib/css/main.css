@@ -363,13 +363,14 @@ html.fullscreen-bg #wrapper {
 
   .navbar-nav>li {
     display: table-cell;
-    width: 1%;
     position: inherit;
     text-align: center;
+    float: right;
+    /* width: 1%; */
   }
 
   .navbar-nav>li>a {
-    padding: 15px 20px;
+    padding: 0;
   }
 
   .navbar-nav>li>a span:not(.badge),
