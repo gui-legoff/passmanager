@@ -47,7 +47,7 @@
                             <input type="password" class="form-control password float-l" id="pwd_<?= $v['id'] ?>"
                                 onclick="copyToClipboard('#pwd_<?= $v['id'] ?>')" value="<?= $v['pass']; ?>"
                                 style="width:70%;padding:0;height:auto">
-                            <button type="button" class="btn btn-secondary float-r toggle-password"
+                            <button type="button" class="btn btn-secondary toggle-password"
                                 toggle="#password-field">
                                 <i class="fa fa-eye-slash" style="margin:0"></i>
                             </button>
@@ -98,17 +98,18 @@
                                 <img src="media/img/vignette/<?= $v['image'] ?>" alt="<?= $v['name'] ?>" class="vgn_img">
                             </div>
                             <div class="panel-body" style="display: block;">
+                                <!-- login -->
                                 <p><i class="fas fa-user"></i><?= $v['login'] ?></p>
+                                <!-- mot de passe -->
                                 <p>
                                     <i class="fas fa-lock float-l"></i>
                                     <input type="password" class="form-control password float-l" id="pwd_<?= $v['id'] ?>"
                                         onclick="copyToClipboard('#pwd_<?= $v['id'] ?>')" value="<?= $v['pass']; ?>"
                                         style="width:55%;padding:0;height:auto;margin-right:10px">
-                                    <button type="button" class="btn btn-secondary float-r toggle-password"
-                                        toggle="#password-field">
+                                    <button type="button" class="btn btn-secondary toggle-password" toggle="#password-field">
                                         <i class="fa fa-eye-slash" style="margin:0"></i>
                                     </button>
-                                    <div style="clear:both"></div>
+                                    <p style="clear:both"></p>
                                 </p>
                                 <!-- notes -->
                                 <?php if(!empty($v['notes'])){ ?>
