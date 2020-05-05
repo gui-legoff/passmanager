@@ -16,7 +16,7 @@
   margin:0 1%;
 }
 
-#popupAdd{
+#popup_Add{
   border-radius:30px;
   margin-top: 24px;
 }
@@ -63,7 +63,7 @@
         margin-bottom: 20px;
     }
 
-    #popupAdd{
+    #popup_Add{
       margin-left: 23%;
     }
 
