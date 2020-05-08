@@ -17,8 +17,9 @@ if( $oUser -> accountsData($aUserData['id']) === false ){
     // Convert the Mysql answer to an array
     $aUserAccounts = ConvertResSqlToMultiArray($aUserAccounts);
 
-    // Add image to the array
+    // Reformatage du tableau
     foreach ($aUserAccounts as $key => $value) {
+        // Add image to the array
         $img = lcfirst($aUserAccounts[$key]['name'].'.png');
         $img = str_replace(' ','_', $img);
         
@@ -27,6 +28,9 @@ if( $oUser -> accountsData($aUserData['id']) === false ){
         }else{
             $aUserAccounts[$key]['image'] = 'vignette-default.png';
         }
+
+        // Decryptage des mot de passe
+        $aUserAccounts[$key]['pass'] = openssl_decrypt($aUserAccounts[$key]['pass'], MDP_CYPHER , MDP_SALT);
     }
 }
 
@@ -37,7 +41,7 @@ if(!isset($_POST['addWebsite'])){
 }else{
     $name = htmlentities(addslashes($_POST['name']));
     $login = htmlentities(addslashes($_POST['login']));
-    $pass = htmlentities(addslashes($_POST['pass']));
+    $pass = openssl_encrypt($_POST['pass'] , MDP_CYPHER , MDP_SALT);
 
     if(isset($_POST['link'])){$link = htmlentities(addslashes($_POST['link']));}else{$link = '';}
     if(isset($_POST['notes'])){$notes = htmlentities(addslashes($_POST['notes']));}else{$notes = '';}
@@ -109,7 +113,7 @@ if(isset($_POST['updateWebsite'])){
     $id = htmlentities(addslashes($_POST['id']));
     $name = htmlentities(addslashes($_POST['name']));
     $login = htmlentities(addslashes($_POST['login']));
-    $pass = htmlentities(addslashes($_POST['pass']));
+    $pass = openssl_encrypt($_POST['pass'] , MDP_CYPHER , MDP_SALT);
     $link = htmlentities(addslashes($_POST['link']));
     if(isset($_POST['notes'])){
         $notes = htmlentities(addslashes($_POST['notes']));

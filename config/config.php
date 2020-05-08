@@ -29,3 +29,10 @@
     $DBmdp = "root";
     $DBhost = "127.0.0.1";
     $DBdbname = "passmanager";
+
+
+//_____________________ MOT DE PASSE  _______________________//
+
+    // Constantes
+    define('MDP_SALT','H+Y+BO5/P3dhLZC4Ng=');
+    define('MDP_CYPHER','AES-128-ECB');
