@@ -46,21 +46,16 @@
         <!-- NAVBAR -->
         <nav class="navbar navbar-default navbar-fixed-top" id="navbar">
             <div class="navbar-btn">
-                <button type="button" class="btn-toggle-fullwidth m-l-20" style="margin-top:4px"><i class="lnr lnr-arrow-left-circle"></i></button>
+                <button type="button" class="btn-toggle-fullwidth m-l-20 m-t-10"><i class="lnr lnr-arrow-left-circle"></i></button>
             </div>
-            <div class="brand p-t-25 p-l-0">
+            <div class="brand p-t-15 p-l-0">
                 <a href="./"><img src="media/img/logo.png" alt="Pass manager Logo" class="img-responsive logo"></a>
             </div>
             <div class="container-fluid p-t-10 p-b-10">
-                <div class="navbar-btn">
-                    <button type="button" class="btn-toggle-fullwidth"><i
-                            class="lnr lnr-arrow-left-circle"></i></button>
-                </div>
                 <div style="float:left" class="brand">
                     <h3 style="line-height:30px" class="float-l m-t-0 m-b-0">Bonjour <?= $aUserData['pseudo'] ?><i
                             class="far fa-hand-peace" style="margin-left:8px"></i></h3>
-                    <p class="panel-subtitle float-l m-b-0" id="connexion_last">Dernière connexion :
-                        <?= $aUserData['last_connexion'] ?></p>
+                    <!-- <p class="panel-subtitle float-l m-b-0" id="connexion_last">Dernière connexion : <?= $aUserData['last_connexion'] ?></p> -->
                 </div>
                 <div>
                     <ul class="nav navbar-nav navbar-right" id="navbar_menu">

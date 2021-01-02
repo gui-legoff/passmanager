@@ -279,3 +279,20 @@ ul {padding-left: 0}
 .p-r-5 {padding-right: 5px !important}
 .p-r-0 {padding-right: 0 !important}
 .p-0 {padding: 0 !important}
+
+
+/***************   TAILLE   ***************/
+
+.width100{width: 100%;}
+
+
+/***************   BORDER   ***************/
+.border0{
+  border: none;
+}
+
+/***************   COLOR   ***************/
+.bg-orange{background-color:#ff7f00;}
+.color-white{color: white;}
+
+

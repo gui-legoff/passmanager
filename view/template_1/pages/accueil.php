@@ -2,7 +2,7 @@
     <!-- SEARCH BAR -->
     <div id="search_content" class="p-t-10">
         <div class="float-l" id="search_div">
-            <form class="navbar-form navbar-left p-0 width100" method="post">
+            <form class="navbar-form navbar-left width100" method="post">
                 <div class="input-group width100">
                     <input type="text" class="form-control" id="search" placeholder="Nom du site..." name="keyword"
                         value="<?php if(isset($search)){echo $search;}?>">
