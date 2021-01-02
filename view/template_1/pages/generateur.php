@@ -1,8 +1,8 @@
     <!-- OVERVIEW -->
-    <div class="panel panel-headline" style="margin:0 1%">
+    <div class="panel panel-headline">
         <div class="panel-heading">
             <div style="float:left">
-                <h1>Générateur de mots de passe</h1>
+                <h1 class="m-t-0">Générateur de mots de passe</h1>
             </div>
             <div style="clear:both"></div>
             <p class="panel-subtitle">Vous pouvez générer un mot de passe aléatoir avec plusieurs choix possible :

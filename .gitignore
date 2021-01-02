@@ -1,9 +1,18 @@
 # Ignore private folder
 docs/
+
+# Media 
 media/psd
-config/
+media/img/users/
+
+# Config
+config/*
+
+# Other sites
 view/guillaume_legoff/
+view/passmanager_showcase/
 
 
 # Ignore private files
 .htaccess
+php_errors.log

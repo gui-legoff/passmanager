@@ -1,8 +1,8 @@
     <!-- OVERVIEW -->
-    <div class="panel panel-headline" style="margin:0 1%">
+    <div class="panel panel-headline">
         <div class="panel-heading">
             <div style="float:left">
-                <h1>Statistiques de votre compte</h1>
+                <h1 class="m-t-0">Statistiques de votre compte</h1>
             </div>
             <div style="clear:both"></div>    
             <p class="panel-subtitle">Vous retrouverez ici, différents test effectués sur vos mots de passe</p>

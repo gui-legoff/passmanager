@@ -51,9 +51,16 @@
             <div class="brand p-t-25 p-l-0">
                 <a href="./"><img src="media/img/logo.png" alt="Pass manager Logo" class="img-responsive logo"></a>
             </div>
-            <div class="container-fluid">
+            <div class="container-fluid p-t-10 p-b-10">
+                <div class="navbar-btn">
+                    <button type="button" class="btn-toggle-fullwidth"><i
+                            class="lnr lnr-arrow-left-circle"></i></button>
+                </div>
                 <div style="float:left" class="brand">
-                    <h3 style="margin-top:0" class="float-l">Bonjour <?= $aUserData['pseudo'] ?><i class="far fa-smile-beam" style="margin-left:8px"></i></h3>
+                    <h3 style="line-height:30px" class="float-l m-t-0 m-b-0">Bonjour <?= $aUserData['pseudo'] ?><i
+                            class="far fa-hand-peace" style="margin-left:8px"></i></h3>
+                    <p class="panel-subtitle float-l m-b-0" id="connexion_last">Dernière connexion :
+                        <?= $aUserData['last_connexion'] ?></p>
                 </div>
                 <div>
                     <ul class="nav navbar-nav navbar-right" id="navbar_menu">
@@ -84,7 +91,6 @@
                         <li><a href="corbeille"><i class="lnr lnr-trash"></i> <span>Corbeille</span></a></li>
                         <li><a href="generateur"><i class="lnr lnr-lock"></i> <span>Générateur</span></a></li>
                         <li><a href="statistiques"><i class="lnr lnr-chart-bars"></i> <span>Statistiques</span></a></li>
-                        <!-- <li><a href="telecharger"><i class="lnr lnr-download"></i> <span>Télécharger</span></a> -->
                     </ul>
                 </nav>
             </div>
@@ -93,16 +99,14 @@
 
         <!-- MAIN CONTENT -->
         <div class="main" id="content_body">
-            <div class="main-content">
-                <div class="container-fluid">
-                    <?php
-                        if( empty($_GET['url']) ){
-                            require_once 'view/template_1/pages/accueil.php';
-                        }else{
-                            require_once 'view/template_1/pages/'.$_GET['url'].'.php';                     
-                        }                      
-                        ?>
-                </div>
+            <div class="main-content" style="padding-top: 12px;">
+                <?php
+                    if( empty($_GET['url']) ){
+                        require_once 'view/template_1/pages/accueil.php';
+                    }else{
+                        require_once 'view/template_1/pages/'.$_GET['url'].'.php';                     
+                    }                      
+                ?>
             </div>
         </div>
         <!-- END MAIN CONTENT -->

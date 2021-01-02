@@ -2,10 +2,6 @@ li {list-style: none;}
   
 ul {padding-left: 0}
 
-#wrapper .main, #wrapper .main-content {
-  padding-top: 54.4px;
-}
-
 #sidebar-nav ul{padding-top: 20px}
   
 .vignette{
@@ -15,7 +11,7 @@ ul {padding-left: 0}
 }
 
 .vignette .panel{
-  min-height: 420px;
+  min-height: 380px;
 }
 .vgn_img{
   width: 100%;
@@ -73,9 +69,42 @@ ul {padding-left: 0}
   object-fit: cover;
 }
 
-.update-pro{
-  margin:22px;
+/* header */
+#connexion_last{
+  line-height: 30px;
+  padding-left:20px;
+  font-style: italic;
+  opacity: 0.4;
 }
+
+/* search bar */
+#search_div{
+  width: 80%;
+}
+
+#search {
+  border-top-left-radius : 30px;
+  border-bottom-left-radius : 30px;
+  background-color: white;
+  padding: 10px;
+  padding-left: 20px;
+  height: auto;
+}
+#btn_search{
+  border-top-right-radius : 30px;
+  border-bottom-right-radius : 30px;
+  padding: 10px;
+  padding-left: 15px;
+  height: auto;
+}
+#btn_search:hover{
+  color: white;
+}
+
+
+.input-group{
+  box-shadow: none;
+} 
 
 @media screen and (max-width: 1600px){
   .vignette{
@@ -85,23 +114,27 @@ ul {padding-left: 0}
 
 @media screen and (max-width: 1200px){
   .vignette{
-    width: 98%;
+    width: 94%;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin: 0 auto;
+    float: inherit;
   }
 
   #connexion_last{
     display: none;
   }
 
-  .navbar-form .input-group, .navbar-form , .panel-heading div, .input-group-btn:last-child > .btn{
+  .navbar-form .input-group, .navbar-form , .panel-heading div{
     width: 100%!important;
   }
 
   .update-pro, .btn{
-    width: 100%;
+    width: auto;
     margin: 40px 0 30px 0;
-    padding: 3.5% 0;
+    padding: 3.5% 6%;
     font-size: 20px;
-    float: none!important;
+    float:none;
   }
 
   #wrapper .main-content {
@@ -115,8 +148,6 @@ ul {padding-left: 0}
   .iVignette{
     margin-left: 15px
   }
-
-
 }
 
 @media screen and (max-width: 767px){
@@ -157,11 +188,22 @@ ul {padding-left: 0}
     margin-top: 20px;
   }
 
+  #search_div{
+    width: 100%;
+  }
+  
+  #btn_search{
+    margin-right: 10px;
+  }
+
+  #search{
+    width: inherit;
+  }
+
 }
 
 /***************   CURSOR   ***************/
 .cursor_not-allowed{cursor: not-allowed;}
-
 
 /***************   MARGIN - PADDING   ***************/
 .m-t-50 {margin-top: 50px !important}
