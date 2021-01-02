@@ -45,19 +45,15 @@
     <div id="wrapper">
         <!-- NAVBAR -->
         <nav class="navbar navbar-default navbar-fixed-top" id="navbar">
-            <div class="brand">
+            <div class="navbar-btn">
+                <button type="button" class="btn-toggle-fullwidth m-l-20" style="margin-top:4px"><i class="lnr lnr-arrow-left-circle"></i></button>
+            </div>
+            <div class="brand p-t-25 p-l-0">
                 <a href="./"><img src="media/img/logo.png" alt="Pass manager Logo" class="img-responsive logo"></a>
             </div>
             <div class="container-fluid">
-                <div class="navbar-btn">
-                    <button type="button" class="btn-toggle-fullwidth"><i
-                            class="lnr lnr-arrow-left-circle"></i></button>
-                </div>
                 <div style="float:left" class="brand">
-                    <h3 style="margin-top:0" class="float-l">Bonjour <?= $aUserData['pseudo'] ?><i
-                            class="far fa-smile-beam" style="margin-left:8px"></i></h3>
-                    <p class="panel-subtitle float-l" id="connexion_last" style="line-height: 1.9;padding-left:20px">Dernière connexion :
-                        <?= $aUserData['last_connexion'] ?></p>
+                    <h3 style="margin-top:0" class="float-l">Bonjour <?= $aUserData['pseudo'] ?><i class="far fa-smile-beam" style="margin-left:8px"></i></h3>
                 </div>
                 <div>
                     <ul class="nav navbar-nav navbar-right" id="navbar_menu">

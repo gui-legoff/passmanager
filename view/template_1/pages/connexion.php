@@ -53,7 +53,7 @@
                             <div class="header">
                                 <div class="logo text-center"><img src="media/img/logo.png" alt="Pass manager Logo">
                                 </div>
-                                <p class="lead">Se connecter à votre compte</p>
+                                <p class="lead">Connexion à votre compte</p>
                             </div>
                             <form class="form-auth-small" action="" method="post">
                                 <div class="form-group">
@@ -81,7 +81,7 @@
                     </div>
                     <div class="right">
                         <div class="overlay"></div>
-                        <a href="view/passmanager_showcase" style="position: absolute;"><img src="media/img/con_banniere.jpg" alt="banniere" id="banniere"></a>
+                        <!-- <a href="view/passmanager_showcase" style="position: absolute;"><img src="media/img/con_banniere.jpg" alt="banniere" id="banniere"></a> -->
                         <div class="content text">
                             <h1 class="heading">Connectez-vous a votre compte Pass manager</h1>
                             <br>
@@ -90,9 +90,9 @@
                     </div>
                     <div class="clearfix"></div>
                     <div style="text-align:center;margin:30px;font-size:16px">
-                        <a href="mailto:guillaumelegoffmail@gmail.com" style="color: #555;"><i class="far fa-envelope"></i>Contactez l'administrateur : guillaumelegoffmail@gmail.com</a>
+                        <a href="mailto:guillaumelegoffmail@gmail.com" style="color: #555;"><i class="far fa-envelope"></i>Contactez l'administrateur : <span style="color:#3b98c8">guillaumelegoffmail@gmail.com</a>
                         <br>
-                        <a href="view/passmanager_showcase" style="color: #555;margin-top:8px;display:block;"><i class="fas fa-desktop"></i>A propos de Pass manager</a>
+                        <a href="view/passmanager_showcase" style="color: #555;margin-top:8px;display:block;"><i class="fas fa-desktop"></i>A propos de <span style="color:#3b98c8">Pass manager</span></a>
                     </div>
                 </div>
             </div>
