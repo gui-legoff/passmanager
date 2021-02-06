@@ -66,27 +66,6 @@ require_once 'php/modules/function.php';
         }
     }
 
-
-//____________________________________________________//
-    
-/**
-   * Allowed websites
-   *
-   * @return array $allowedWebsite
-   *
-   */
-
-  $pathAllowedWebsite = "media/img/vignette";
-    
-  $AllowedWebsite = array();
-  $scanP = scandir($pathAllowedWebsite);
-  foreach ($scanP as $s) {
-      if($s != "." AND $s != ".." AND $s != "vignette-default.png"){
-          $s = explode('.',$s);
-          $AllowedWebsite[] = $s[0];
-      }
-  }
-
 //____________________________________________________//
 
 

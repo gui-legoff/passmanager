@@ -26,7 +26,7 @@
 
     // Set Data base access
     $DBlogin = "root";
-    $DBmdp = "root";
+    $DBmdp = "";
     $DBhost = "127.0.0.1";
     $DBdbname = "passmanager";
 

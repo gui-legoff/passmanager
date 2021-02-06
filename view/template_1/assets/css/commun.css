@@ -7,15 +7,22 @@ ul {padding-left: 0}
 .vignette{
   float: left;
   width: 18%;
-  margin: 1%;
 }
 
 .vignette .panel{
-  min-height: 380px;
+  cursor: pointer;
+  transition-duration: 200ms;
 }
+
+.vignette .panel:hover{
+  transform: scale(0.96);
+  box-shadow: 0 0 8px 8px rgba(136,136,136,0.3);
+}
+
 .vgn_img{
   width: 100%;
   margin-top: 10px;
+  position: relative;
 }
 
 .float-r{
@@ -148,6 +155,7 @@ ul {padding-left: 0}
   .iVignette{
     margin-left: 15px
   }
+
 }
 
 @media screen and (max-width: 767px){
@@ -294,5 +302,13 @@ ul {padding-left: 0}
 /***************   COLOR   ***************/
 .bg-orange{background-color:#ff7f00;}
 .color-white{color: white;}
+
+
+/***************   POSITION   ***************/
+.p-absolute {position: absolute;}
+
+
+/***************   TEXT   ***************/
+.t-align-center {text-align: center;}
 
 

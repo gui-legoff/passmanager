@@ -33,7 +33,7 @@
                                 <i class="lnr lnr-trash float-r iVignette"
                                     style="font-size:17px;cursor:pointer"></i>
                             </a>
-                            <a href="?update=<?= $v['id']; ?>#update_<?= $v['id']; ?>" style="color:black">
+                            <a href="?show=<?= $v['id']; ?>#show_<?= $v['id']; ?>" style="color:black">
                                 <i class="lnr lnr-pencil float-r iVignette"
                                     style="font-size:17px;cursor:pointer"></i>
                             </a>
@@ -80,51 +80,58 @@
 
     <!-- LIST ACCOUNTS -->
     <?php if(!empty($aUserAccounts)){ ?>
-        <ul>
+        <ul class="p-l-30 p-r-30">
             <?php
                 foreach ($aUserAccounts as $key => $v) { ?>
-                    <li class="vignette">
-                        <div class="panel p-b-0 m-b-0">
-                            <div class="panel-heading">
-                                <h3 class="panel-title float-l"><?= $v['name'] ?></h3>
-                                <div>
-                                    <a href="?delete=<?= $v['id']; ?>#delete_<?= $v['id']; ?>" style="color:black">
-                                        <i class="lnr lnr-trash float-r iVignette"></i>
-                                    </a>
-                                    <a href="?update=<?= $v['id']; ?>#update_<?= $v['id']; ?>" style="color:black">
-                                        <i class="lnr lnr-pencil float-r iVignette"></i>
-                                    </a>
+                    <li class="vignette m-b-0 m-l-10 m-r-10 m-t-25">
+                        <a href="?show=<?= $v['id']; ?>#show_<?= $v['id']; ?>" style="color:black">
+                            <div class="panel p-b-0 m-b-0 m-t-0">
+                                <div class="panel-heading">
+                                    <!-- <h3 class="panel-title float-l"><?= $v['name'] ?></h3> -->
+                                    <div>
+                                        <!--
+                                        <a href="?delete=<?= $v['id']; ?>#delete_<?= $v['id']; ?>" style="color:black">
+                                            <i class="lnr lnr-trash float-r iVignette"></i>
+                                        </a>
+                                        <a href="?update=<?= $v['id']; ?>#update_<?= $v['id']; ?>" style="color:black">
+                                            <i class="lnr lnr-pencil float-r iVignette"></i>
+                                        </a>
+                                        -->
+                                    </div>
+                                    <div class="vignette-default" style="background: no-repeat center/100% url('media/img/vignette/<?= $v['image'] ?>')">
+                                    <?php if ($v['image'] == 'vignette-default.png') { ?>
+                                        <h3 class="t-align-center"><?= $v['name'] ?></h3>
+                                    <?php } ?>    
+                                    </div>
                                 </div>
-                                <img src="media/img/vignette/<?= $v['image'] ?>" alt="<?= $v['name'] ?>" class="vgn_img">
-                            </div>
-                            <div class="panel-body" style="display: block;">
-                                <!-- login -->
-                                <p><i class="fas fa-user"></i><?= $v['login'] ?></p>
-                                <!-- mot de passe -->
-                                <p>
-                                    <i class="fas fa-lock float-l"></i>
-                                    <input type="password" class="form-control password float-l" id="pwd_<?= $v['id'] ?>"
-                                        onclick="copyToClipboard('#pwd_<?= $v['id'] ?>')" value="<?= $v['pass']; ?>"
-                                        style="width:55%;padding:0;height:auto;margin-right:10px">
-                                    <button type="button" class="btn btn-secondary toggle-password" toggle="#password-field">
-                                        <i class="fa fa-eye-slash" style="margin:0"></i>
-                                    </button>
-                                    <p style="clear:both"></p>
-                                </p>
-                                <!-- notes -->
-                                <?php if(!empty($v['notes'])){ ?>
-                                    <p><i class='far fa-sticky-note'></i>
-                                    <?= CutString($v['notes'],20); ?>
+                                <!--
+                                <div class="panel-body" style="display: block;">
+                                
+                                    <p><i class="fas fa-user"></i><?= $v['login'] ?></p>
+                                    <p>
+                                        <i class="fas fa-lock float-l"></i>
+                                        <input type="password" class="form-control password float-l" id="pwd_<?= $v['id'] ?>"
+                                            onclick="copyToClipboard('#pwd_<?= $v['id'] ?>')" value="<?= $v['pass']; ?>"
+                                            style="width:55%;padding:0;height:auto;margin-right:10px">
+                                        <button type="button" class="btn btn-secondary toggle-password" toggle="#password-field">
+                                            <i class="fa fa-eye-slash" style="margin:0"></i>
+                                        </button>
+                                        <p style="clear:both"></p>
                                     </p>
-                                <?php }; ?>
-                                <!-- lien -->
-                                <?php if(!empty($v['link'])){ ?>
-                                    <p><i class='fas fa-link'></i><a href='<?= $v['link'] ?>' target='_blank'>
-                                    <?= CutString($v['link'],20); ?>
-                                    </a></p>
-                                <?php }; ?>
+                                    <?php if(!empty($v['notes'])){ ?>
+                                        <p><i class='far fa-sticky-note'></i>
+                                        <?= CutString($v['notes'],20); ?>
+                                        </p>
+                                    <?php }; ?>
+                                    <?php if(!empty($v['link'])){ ?>
+                                        <p><i class='fas fa-link'></i><a href='<?= $v['link'] ?>' target='_blank'>
+                                        <?= CutString($v['link'],20); ?>
+                                        </a></p>
+                                    <?php }; ?>
+                                </div>
+                                -->
                             </div>
-                        </div>
+                        </a>
                     </li>
                 <?php } 
             ?>
@@ -155,20 +162,6 @@
                 <div class="panel-body">
                     <form method="post">
                         <h2>Ajouter un site</h2><br>
-
-                        <label for="select"><i class="far fa-bookmark"></i>Sites suggérés</label>
-                        <select class="form-control" id="colorselector">
-                            <option value="">Choisir ...</option>
-                            <?php
-                            // Website allowed
-                            foreach ($AllowedWebsite as $key => $value) {
-                            ?>
-                            <option value="<?= ucfirst($value) ?>"><?= ucfirst($value) ?></option>
-                            <?php
-                            }
-                            ?>
-                        </select>
-                        <br>
 
                         <label for="link"><i class="far fa-file"></i>Nom</label>
                         <input type="text" class="form-control" id="name" name="name" value="<?= $name ?>" required><br>
@@ -221,7 +214,7 @@
 
 
     <!-- POPUP UPDATE WEBSITE -->
-    <div id="update_<?= $idVignette; ?>" class="overlay">
+    <div id="show_<?= $idVignette; ?>" class="overlay">
         <div class="popup">
             <a class="close" href="#">&times;</a>
             <div class="content">

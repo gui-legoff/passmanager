@@ -34,7 +34,7 @@ if( $oUser -> accountsData($aUserData['id']) === false ){
     }
 }
 
-//Controller pour ajouter un site
+//Controler pour ajouter un site
 if(!isset($_POST['addWebsite'])){
     $name = '';$login = '';$pass = '';$link = '';$notes = ''; 
 
@@ -91,10 +91,10 @@ if( isset($_POST['deleteVignette']) ){
 // Controller pour gérer dynamiquement l'id dans les popup modifier / supprimer
 if( isset($_GET['delete']) ){
     $idVignette = $_GET['delete'];
-}elseif( isset($_GET['update']) ){
-    $idVignette = $_GET['update'];
+}elseif( isset($_GET['show']) ){
+    $idVignette = $_GET['show'];
 
-    // Variable pour remplier le formulaire
+    // Variable pour remplire le formulaire
     $upName = $aUserAccounts["$idVignette"]['name'];
     $upLogin = $aUserAccounts["$idVignette"]['login'];
     $upPass = $aUserAccounts["$idVignette"]['pass'];
@@ -104,7 +104,6 @@ if( isset($_GET['delete']) ){
 }else{
     $idVignette = '';
 }
-
 
 // Controller pour modifier une vignette
 if(isset($_POST['updateWebsite'])){
