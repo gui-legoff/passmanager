@@ -64,9 +64,20 @@
     margin-bottom: 35px;
   }
 
+  #search_div{
+    width: 100%;
+  }
+
+  .input-group-btn {width: 0!important;}
+
   .vignette button{
     float: right;
     margin: 0;
+  }
+
+  #popup_Add {
+    width: 40%;
+    margin: 0 30%;
   }
 
 }
