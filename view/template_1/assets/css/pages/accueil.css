@@ -70,6 +70,8 @@
 
   .input-group-btn {width: 0!important;}
 
+  .vignette{width: 47%;float: left;}
+
   .vignette button{
     float: right;
     margin: 0;
